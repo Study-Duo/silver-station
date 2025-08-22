@@ -1,2 +1,2 @@
 # silver-station
-Study more,progress more
+Study more,Progress more
