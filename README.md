@@ -1,3 +1,3 @@
 # silver-station
 Study more,Progress more
-Hold on,Will done
+Hold on,Will be done
