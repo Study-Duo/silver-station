@@ -1,0 +1,132 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "c2713f85-5d9b-4d3a-9b74-f62dc6d408bb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello Li duo,would you like to learn some Python today?\n"
+     ]
+    }
+   ],
+   "source": [
+    "#字符串操作\n",
+    "first_name=\"Li\"\n",
+    "last_name=\"duo\"\n",
+    "full_name=f\"{first_name} {last_name}\"\n",
+    "message=f\"Hello {full_name},would you like to learn some Python today?\"\n",
+    "print(message)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "42d4954e-5684-4ee7-8520-10a5f7e8e8cf",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Li Runduo\n",
+      "Hello Li Runduo!\n",
+      "\n",
+      "Hello Miao Qiuyan!\n",
+      "\n",
+      "Hello Wang Ruiqi!\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "#列表\n",
+    "names=[\"li runduo\",\"miao qiuyan\",\"wang ruiqi\"]\n",
+    "print(names[0].title())\n",
+    "for n in names:\n",
+    "    print(f\"Hello {n.title()}!\\n\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "42eb6c3a-efa3-4e8f-9e9f-5b37f0772578",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['li rundo', 'zhao ziquan', 'cao yuxin']\n",
+      "Zhao Ziquan will not come because of illness.\n",
+      "wang zhongqi\n",
+      "Cao Yuxin will not come because of business.\n",
+      "['li rundo', 'wang zhongqi', 'maio qiuyan']\n",
+      "['yan shuangying', 'li rundo', 'wang zhongqi', 'maio qiuyan']\n",
+      "Sorry Wang Zhongqi,the table is small.\n",
+      "['yan shuangying', 'li rundo', 'maio qiuyan']\n",
+      "['yan shuangying', 'li rundo']\n"
+     ]
+    }
+   ],
+   "source": [
+    "#列表中对元素的操作\n",
+    "guests=[\"li rundo\",\"zhao ziquan\",\"cao yuxin\"]\n",
+    "print(guests)\n",
+    "#替换元素\n",
+    "ill_guest=guests[1]\n",
+    "print(f\"{ill_guest.title()} will not come because of illness.\")\n",
+    "new_guest=\"wang zhongqi\"\n",
+    "print(new_guest)\n",
+    "guests[1]=new_guest\n",
+    "#弹出元素\n",
+    "busy_guest=guests.pop()\n",
+    "print(f\"{busy_guest.title()} will not come because of business.\")\n",
+    "#加入元素\n",
+    "guests.append(\"maio qiuyan\")\n",
+    "print(guests)\n",
+    "guests.insert(0,\"yan shuangying\")\n",
+    "print(guests)\n",
+    "sorry_guest=guests[2]\n",
+    "guests.remove(\"wang zhongqi\")\n",
+    "print(f\"Sorry {sorry_guest.title()},the table is small.\")\n",
+    "print(guests)\n",
+    "del guests[-1]\n",
+    "print(guests)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4484fb8f-f5e3-48de-9842-916053eedfd0",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.18"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
